@@ -28,15 +28,15 @@ st.markdown("### 🔄 Navigate to Another Page")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    if st.button("🏠 Homepage",use_container_width=True):
+    if st.button("🏠 Homepage",width='stretch'):
         st.switch_page("lolirock.py")
 
 with col2:
-    if st.button("📊 Playlists",use_container_width=True):
+    if st.button("📊 Playlists",width='stretch'):
         st.switch_page("pages/playlists.py")
 
 with col3:
-    if st.button("🎶 Songs",use_container_width=True):
+    if st.button("🎶 Songs",width='stretch'):
         st.switch_page("pages/songs.py")
 
 # Load data
@@ -81,7 +81,7 @@ fig.update_layout(
 # Glowing line
 fig.update_traces(line=dict(color='rgba(135, 206, 250, 0.8)', width=3))
 
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width='stretch')
 
 #I figured out how to make my line chart using this streamlit website:
 #(Source: https://docs.streamlit.io/develop/api-reference/charts/st.line_chart retrieved in April 2025)
