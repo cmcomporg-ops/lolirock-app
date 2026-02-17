@@ -1,0 +1,8 @@
+# .env file for PySQLit
+GIT_USER_NAME=student_username
+GIT_USER_EMAIL=student@example.com
+STUDENT_HOSTNAME=std-001
+RUN_STREAMLIT=no
+SSH_USERNAME=student
+SSH_PASSWORD=student
+SSH_KEY_PATH=/home/student/.ssh/id_rsa
