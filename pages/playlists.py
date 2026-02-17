@@ -27,15 +27,15 @@ st.markdown("### 🔄 Navigate to Another Page")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    if st.button("🏠 Homepage",use_container_width=True):
+    if st.button("🏠 Homepage",width='stretch'):
         st.switch_page("lolirock.py")
 
 with col2:
-    if st.button("🎶 Songs",use_container_width=True):
+    if st.button("🎶 Songs",width='stretch'):
         st.switch_page("pages/songs.py")
 
 with col3:
-    if st.button("⭐ Ratings",use_container_width=True):
+    if st.button("⭐ Ratings",width='stretch'):
         st.switch_page("pages/ratings.py")
 
 lr_theme("assets/xeris.jpg")
@@ -90,5 +90,5 @@ fig.update_layout(
     )
 )
 
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width='stretch')
 
