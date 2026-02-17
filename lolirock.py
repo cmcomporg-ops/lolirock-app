@@ -28,15 +28,15 @@ col1, col2, col3 = st.columns(3)
 
 
 with col1:
-    if st.button("📊 Playlist Stats",use_container_width=True):
+    if st.button("📊 Playlist Stats",width='stretch'):
         st.switch_page("pages/playlists.py")  
 
 with col2:
-    if st.button("🎶 Song Appearances",use_container_width=True):
+    if st.button("🎶 Song Appearances",width='stretch'):
         st.switch_page("pages/songs.py")
 
 with col3:
-    if st.button("⭐ IMDb Ratings",use_container_width=True):
+    if st.button("⭐ IMDb Ratings",width='stretch'):
         st.switch_page("pages/ratings.py")
 
 
@@ -69,7 +69,7 @@ with tabs[0]:
         st.image("assets/lol.jpg")
 
     with col2:
-        st.image("assets/lol.gif",use_container_width=True)
+        st.image("assets/lol.gif",width='stretch')
 
 with tabs[1]:
     st.markdown("### 💖 Iris – The Heart")
@@ -130,7 +130,7 @@ with tabs[3]:
         st.image("assets/a.jpg", width=500)
 
     with col2:
-        st.image("assets/red.gif",use_container_width=True)
+        st.image("assets/red.gif",width='stretch')
         st.image("assets/ar.jpg")
 
 # I referenced the code for buttons from:
