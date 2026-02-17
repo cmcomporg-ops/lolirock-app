@@ -32,6 +32,7 @@ def lr_theme(img_file="ephedia.jpg"):
             font-family: 'Indie Flower', cursive !important;
             text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
         }
+        
         </style>
         """,
         unsafe_allow_html=True
@@ -51,6 +52,11 @@ def lr_theme(img_file="ephedia.jpg"):
         <style>
         [data-testid="stSidebar"] {
             background-color: rgba(0, 0, 0, 0.6);
+        }
+        /* to stop the words keyboard_double_arrow_right from appearing */
+        .notranslate, [data-testid="stIcon"], [data-testid="stSidebarCollapseIcon"] {
+            font-family: 'Material Symbols Outlined' !important;
+            text-shadow: none !important;
         }
         </style>
         """,
