@@ -29,15 +29,15 @@ st.markdown("### 🔄 Navigate to Another Page")
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    if st.button("🏠 Homepage",use_container_width=True):
+    if st.button("🏠 Homepage",width='stretch'):
         st.switch_page("lolirock.py")
 
 with col2:
-    if st.button("📊 Playlists",use_container_width=True):
+    if st.button("📊 Playlists",width='stretch'):
         st.switch_page("pages/playlists.py")
 
 with col3:
-    if st.button("⭐ Ratings",use_container_width=True):
+    if st.button("⭐ Ratings",width='stretch'):
         st.switch_page("pages/ratings.py")
 
 # Connect to MySQL using st.connection (configured in .streamlit/secrets.toml)
@@ -94,7 +94,7 @@ fig.update_layout(
 )
 
 # Show chart in Streamlit
-st.plotly_chart(fig, use_container_width=True)
+st.plotly_chart(fig, width='stretch')
 
 #I got the connection to streamlit from mysql from:
 #(Source: https://docs.streamlit.io/develop/tutorials/databases/mysql retrieved in April 2025)
