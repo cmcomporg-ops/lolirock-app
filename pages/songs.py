@@ -40,9 +40,12 @@ with col3:
     if st.button("⭐ Ratings",width='stretch'):
         st.switch_page("pages/ratings.py")
 
-# Connect to MySQL using st.connection (configured in .streamlit/secrets.toml)
-conn = st.connection("mysql", type="sql")
-df = conn.query("SELECT * FROM SongAppearances", ttl=600)
+# Load data from CSV
+# Used header=1 to skip the "Episode Title" row and use the row with song names as the header
+df = pd.read_csv('Lolirock song apperances in each episode - Sheet1.csv', header=1)
+
+# Rename 'Episode Number' to match the variable name used in the original script
+df.rename(columns={'Episode Number': 'Episode_Number'}, inplace=True)
 
 # Melt wide format to long format
 long_df = df.melt(id_vars=["Episode_Number"], var_name="Song", value_name="Appeared")
