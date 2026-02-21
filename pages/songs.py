@@ -99,8 +99,6 @@ fig.update_layout(
 # Show chart in Streamlit
 st.plotly_chart(fig, width='stretch')
 
-#I got the connection to streamlit from mysql from:
-#(Source: https://docs.streamlit.io/develop/tutorials/databases/mysql retrieved in April 2025)
 
 #I got the code to make the chart from:
 #(Source: https://docs.streamlit.io/develop/api-reference/charts/st.plotly_chart retrieved in April 2025)
